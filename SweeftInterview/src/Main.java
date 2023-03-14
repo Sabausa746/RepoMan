@@ -86,11 +86,12 @@ class Interview {
         }
         list = list.stream().sorted().collect(Collectors.toList());
 
-        for (Integer integer : list) {
-            if(integer>1 && !list.contains(integer-1)){
-                return integer-1;
+        for (int i = 1; i < list.get(list.size()-1); i++) {
+            if(!list.contains(i)){
+                return i;
             }
         }
+
         return list.get(list.size()-1)+1;
     }
     public String binaryAdditionWithParseInt(String a, String b){
