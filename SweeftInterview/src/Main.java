@@ -6,9 +6,9 @@ public class Main {
         Interview interview = new Interview();
         System.out.println(interview.singleNumber(new int[]{1, 1, 2, 2, 3, 3, 4, 6, 6})); //Expected answer: 4
         System.out.println(interview.minSplit(127)); //Expected answer: 6
-        System.out.println(interview.notContains(new int[]{1,2,3,4,6,7,8})); //Expected answer: 5
-        System.out.println(interview.binaryAdditionWithParseInt("1100","100")); //Expected answer: 10000
-        System.out.println(interview.binaryAddition("1100","100")); //Expected answer: 10000
+        System.out.println(interview.notContains(new int[]{1, 2, 3, 4, 6, 7, 8})); //Expected answer: 5
+        System.out.println(interview.binaryAdditionWithParseInt("1100", "100")); //Expected answer: 10000
+        System.out.println(interview.binaryAddition("1100", "100")); //Expected answer: 10000
         System.out.println(interview.countVariants(5)); //Expected answer: 8
 
         /*
@@ -57,6 +57,7 @@ class Interview {
         System.out.println("Element not found");
         return 0;
     }
+
     public int minSplit(int amount) {
         int total = 0;
         while (amount >= 50) {
@@ -79,26 +80,30 @@ class Interview {
         return total;
 
     }
-    public int notContains(int[] array){
-        List<Integer> list = new ArrayList<>();
-        for (int i : array) {
-            list.add(i);
-        }
-        list = list.stream().sorted().collect(Collectors.toList());
 
-        for (int i = 1; i < list.get(list.size()-1); i++) {
-            if(!list.contains(i)){
+    public int notContains(int[] array) {
+        HashSet<Integer> set = new HashSet<>();
+        for (int i = 0; i < array.length; i++) {
+            set.add(array[i]);
+        }
+        int i = 1;
+        while (i <= array.length) {
+            if (set.contains(i)) {
+                i++;
+            } else {
                 return i;
             }
         }
+        return array.length + 1;
 
-        return list.get(list.size()-1)+1;
     }
-    public String binaryAdditionWithParseInt(String a, String b){
-        int num1 = Integer.parseInt(a,2);
-        int num2 = Integer.parseInt(b,2);
-        return Integer.toBinaryString((num1+num2));
+
+    public String binaryAdditionWithParseInt(String a, String b) {
+        int num1 = Integer.parseInt(a, 2);
+        int num2 = Integer.parseInt(b, 2);
+        return Integer.toBinaryString((num1 + num2));
     }
+
     public String binaryAddition(String a, String b) {
         int first = a.length() - 1;
         int second = b.length() - 1;
@@ -124,19 +129,21 @@ class Interview {
         sb.reverse();
         return String.valueOf(sb);
     }
-    public int countVariants(int stairsCount){
-        int one = countVariantsRecursion(stairsCount,0,1) ;
-        int two = countVariantsRecursion(stairsCount,0,2);
+
+    public int countVariants(int stairsCount) {
+        int one = countVariantsRecursion(stairsCount, 0, 1);
+        int two = countVariantsRecursion(stairsCount, 0, 2);
         return one + two;
     }
-    private int countVariantsRecursion(int stairsCount,int currentStep,int nextStep){
-        if(currentStep + nextStep == stairsCount){
+
+    private int countVariantsRecursion(int stairsCount, int currentStep, int nextStep) {
+        if (currentStep + nextStep == stairsCount) {
             return 1;
-        }else if(currentStep + nextStep > stairsCount)
+        } else if (currentStep + nextStep > stairsCount)
             return 0;
         else {
             currentStep += nextStep;
-            return countVariantsRecursion(stairsCount,currentStep,1) + countVariantsRecursion(stairsCount,currentStep,2);
+            return countVariantsRecursion(stairsCount, currentStep, 1) + countVariantsRecursion(stairsCount, currentStep, 2);
         }
     }
 
