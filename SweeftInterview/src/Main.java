@@ -29,12 +29,7 @@ public class Main {
         System.out.println("added 6");
         temp.remove(5);
         System.out.println("removed 5");
-        temp.add(4);
-        System.out.println("added 4");
-        List<Integer> arr = temp.asList();
-        for (Object integer : arr) {
-            System.out.println(integer);
-        }
+
 
 
     }
