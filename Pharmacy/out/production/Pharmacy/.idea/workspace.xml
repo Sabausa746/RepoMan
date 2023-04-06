@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3e2ad853-a13a-4900-a854-66746cb928cc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../LeetCode/out/production/LeetCode/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../LeetCode/out/production/LeetCode/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../LeetCode/out/production/LeetCode/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../LeetCode/out/production/LeetCode/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../LeetCode/out/production/LeetCode/TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../LeetCode/out/production/LeetCode/TreeNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../LeetCode/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../LeetCode/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../LeetCode/src/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../LeetCode/src/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../LeetCode/src/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../LeetCode/src/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SweeftInterview/out/production/SweeftInterview/Interview.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SweeftInterview/out/production/SweeftInterview/Interview.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SweeftInterview/out/production/SweeftInterview/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SweeftInterview/out/production/SweeftInterview/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SweeftInterview/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SweeftInterview/src/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="2O2lkghpYuTLag4mpAtTZyDQurQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3e2ad853-a13a-4900-a854-66746cb928cc" name="Changes" comment="" />
+      <created>1680766704155</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680766704155</updated>
+      <workItem from="1680766705824" duration="33000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
